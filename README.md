@@ -1,2 +1,2 @@
 # seccomp_examples
-A simple bpf-seccomp usage examples.
+A simple seccomp-bpf usage examples.
