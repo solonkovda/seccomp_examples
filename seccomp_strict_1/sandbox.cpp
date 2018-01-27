@@ -28,6 +28,8 @@ int main(int argc, char **argv) {
     int b = 3;
     int c = a + b;
     if (c != 5) {
+        /* Since strict mode forbids exit_group, which is called during normal
+           exit, we are forced to call _exit directly */
         syscall(__NR_exit, 1);
     }
     
